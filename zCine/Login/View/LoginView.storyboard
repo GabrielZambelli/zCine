@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="dNq-D7-mUf">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="6yK-jc-778" customClass="LoginViewController" customModule="moviesIsHere" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rdf-R2-Q7T">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appstore" translatesAutoresizingMaskIntoConstraints="NO" id="90c-4g-PpH">
+                                <rect key="frame" x="0.0" y="108" width="414" height="229"/>
+                                <color key="backgroundColor" red="0.94117647059999998" green="0.72549019609999998" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="229" id="0Pn-cV-058"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu usuário" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FaU-r7-W8g">
+                                <rect key="frame" x="32" y="404" width="350" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="zXk-ed-KJK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite sua senha" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kk1-dC-i5d">
+                                <rect key="frame" x="32" y="485" width="350" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="0ND-10-Pyt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4fa-QB-7SX">
+                                <rect key="frame" x="32" y="762" width="350" height="48"/>
+                                <color key="backgroundColor" red="0.41981846090000002" green="0.4239562154" blue="0.4324367046" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="WOT-O8-ulN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Entrar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.72549019609999998" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ibf-6n-4rM" firstAttribute="trailing" secondItem="FaU-r7-W8g" secondAttribute="trailing" constant="32" id="6AQ-Pn-6hb"/>
+                            <constraint firstItem="4fa-QB-7SX" firstAttribute="leading" secondItem="ibf-6n-4rM" secondAttribute="leading" constant="32" id="BxX-3S-ISW"/>
+                            <constraint firstItem="FaU-r7-W8g" firstAttribute="leading" secondItem="ibf-6n-4rM" secondAttribute="leading" constant="32" id="CEK-1y-asa"/>
+                            <constraint firstItem="90c-4g-PpH" firstAttribute="top" secondItem="Rdf-R2-Q7T" secondAttribute="top" constant="108" id="GEN-qf-n2l"/>
+                            <constraint firstItem="90c-4g-PpH" firstAttribute="leading" secondItem="ibf-6n-4rM" secondAttribute="leading" id="Idm-vT-k67"/>
+                            <constraint firstItem="kk1-dC-i5d" firstAttribute="top" secondItem="FaU-r7-W8g" secondAttribute="bottom" constant="36" id="TO6-s3-hGL"/>
+                            <constraint firstItem="FaU-r7-W8g" firstAttribute="top" secondItem="90c-4g-PpH" secondAttribute="bottom" constant="67" id="Wbt-aj-FUO"/>
+                            <constraint firstItem="ibf-6n-4rM" firstAttribute="bottom" secondItem="4fa-QB-7SX" secondAttribute="bottom" constant="52" id="j8X-e5-7R0"/>
+                            <constraint firstItem="90c-4g-PpH" firstAttribute="trailing" secondItem="ibf-6n-4rM" secondAttribute="trailing" id="naJ-cD-6mc"/>
+                            <constraint firstItem="kk1-dC-i5d" firstAttribute="leading" secondItem="FaU-r7-W8g" secondAttribute="leading" id="pEO-rP-YcU"/>
+                            <constraint firstItem="kk1-dC-i5d" firstAttribute="trailing" secondItem="FaU-r7-W8g" secondAttribute="trailing" id="xHo-qK-xZI"/>
+                            <constraint firstItem="ibf-6n-4rM" firstAttribute="trailing" secondItem="4fa-QB-7SX" secondAttribute="trailing" constant="32" id="zeG-9b-aMY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ibf-6n-4rM"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uiL-rj-SQl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-248" y="136"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="appstore" width="1024" height="1024"/>
+    </resources>
+</document>
