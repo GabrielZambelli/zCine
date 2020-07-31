@@ -20,7 +20,12 @@ class LoginCoordinator: Coordinatior{
     
     func start() {
         let loginViewController = LoginViewController.instantiateFromStoryboard(.login)
+        loginViewController?.coordinator = self
         
+        let loginViewModel = LoginViewModel()
+        loginViewModel.delegate = loginViewController
+        loginViewController?.loginViewModel = loginViewModel
+
         if let viewController = loginViewController{
             navigationController.pushViewController(viewController, animated: false)
         }

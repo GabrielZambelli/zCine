@@ -10,24 +10,67 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
+    //MARK: -- Attributes
     var coordinator: Coordinatior?
+    weak var loginViewModel: LoginViewModel?
+    
+    //MARK: -- IBOutlet
+    
+    @IBOutlet weak var tfUser: UITextField!
+    @IBOutlet weak var tfPassword: UITextField!
+    
+    //MARK: -- IBAction
+    
+    @IBOutlet weak var btLogin: UIButton!
+    
+    
+    //MARK: -- View Life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tfUser.delegate = self
+        tfPassword.delegate = self
+        
+        tfUser.addHideKeyboard(selector: #selector(hideKeyboar))
+        tfPassword.addHideKeyboard(selector: #selector(hideKeyboar))
     }
-   
-
     
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: Method
+    
+    func login(){
+        
+        guard let user = tfUser.text, let password = tfPassword.text else { return }
+        loginViewModel?.validLogin(userName: user, password: password)
+        
+        hideKeyboar()
     }
-    */
+    
+    @objc func hideKeyboar(){
+        self.view.endEditing(true)
+    }
+}
 
+extension LoginViewController: UITextFieldDelegate{
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case tfUser:
+            tfPassword.becomeFirstResponder()
+        default:
+            login()
+        }
+        return true
+    }
+}
+
+extension LoginViewController: Login{
+    
+    func failedLogin(error: ZcineError) {
+        
+    }
+    
+    
+    func didLogin() {
+        coordinator?.start()
+    }
 }
