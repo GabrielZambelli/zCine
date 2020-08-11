@@ -30,7 +30,13 @@ class LoginCoordinator: Coordinatior{
             navigationController.pushViewController(viewController, animated: false)
         }
     }
+}
+
+extension LoginCoordinator: Login{
     
-    
+    func didLogin() {
+        parentCoordinator?.childDidFinish(self)
+        parentCoordinator?.start()
+    }
 }
 

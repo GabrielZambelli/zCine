@@ -9,9 +9,16 @@
 import Foundation
 
 
+protocol LoginModel{
+    
+    func didLogin()
+    func failedLogin(_ error: ZcineError)
+}
+
+
 class LoginViewModel {
     
-    var delegate:Login?
+    var delegate: LoginModel?
     private var token:Token?
     private var validToken: Token?
     private var session:Session?
@@ -31,8 +38,13 @@ class LoginViewModel {
         TmdbApiProvider.shared.creatSession(validatedToken: validToken) { (result) in
             switch result{
             case.success(let session):
-                //to do save keychain session
-                self.delegate?.didLogin()
+                
+                if(KeychainHelper.shared.set(session: session)){
+                    self.delegate?.didLogin()
+                }else{
+                    self.delegate?.failedLogin(.badSession)
+                }
+                
                 break
             case .failure(let error):
                 self.delegate?.failedLogin(error)

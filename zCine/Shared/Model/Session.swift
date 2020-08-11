@@ -9,7 +9,7 @@
 import Foundation
 
 
-class Session: Decodable{
+class Session: Decodable, Encodable{
     
     let token: Token?
     let sessionId: String
@@ -21,3 +21,5 @@ class Session: Decodable{
         self.success = success
     }
 }
+
+

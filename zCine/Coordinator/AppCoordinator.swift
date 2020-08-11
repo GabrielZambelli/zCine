@@ -20,6 +20,9 @@ class AppCoordinator: Coordinatior{
     }
     
     func start() {
+        
+        //to do verificar se possui session.
+        
         let childCoordinator = LoginCoordinator(self.navigationController)
         childCoordinator.parentCoordinator = self
         add(childCoordinator: childCoordinator)

@@ -9,7 +9,13 @@
 import Foundation
 
 
-struct Token: Decodable {
+struct Token: Decodable, Encodable{
     var requestToken: String
     var expiresAt: String
+    
+    private func isExpired() -> Bool{
+        //to do Token esta valido ??
+        
+        return true
+    }
 }

@@ -8,10 +8,16 @@
 
 import UIKit
 
+
+protocol Login {
+    
+    func didLogin()
+}
+
 class LoginViewController: UIViewController {
     
     //MARK: -- Attributes
-    var coordinator: Coordinatior?
+    var coordinator: Login?
     weak var loginViewModel: LoginViewModel?
     
     //MARK: -- IBOutlet
@@ -63,14 +69,13 @@ extension LoginViewController: UITextFieldDelegate{
     }
 }
 
-extension LoginViewController: Login{
+extension LoginViewController: LoginModel{
     
-    func failedLogin(error: ZcineError) {
-        
+    func failedLogin(_ error: ZcineError) {
+        //To do Failed
     }
     
-    
     func didLogin() {
-        coordinator?.start()
+        coordinator?.didLogin()
     }
 }

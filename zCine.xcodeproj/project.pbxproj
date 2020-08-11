@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DDA050B364D86DA95543AD0 /* Pods_zCineTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 681E2D8B1435D32663130E3E /* Pods_zCineTests.framework */; };
 		C05401BA24D0FAE800F06816 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = C05401B924D0FAE800F06816 /* Session.swift */; };
 		C054DAA424C5224F009223C4 /* TmdbApiProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = C054DAA324C5224F009223C4 /* TmdbApiProvider.swift */; };
 		C055576724C7BD5E003AE9E2 /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = C055576624C7BD5E003AE9E2 /* Token.swift */; };
@@ -27,7 +28,8 @@
 		C0567DFB24BE885D00638E85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0567DFA24BE885D00638E85 /* Assets.xcassets */; };
 		C0598BEC24BFD0DD0099AE28 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0598BEB24BFD0DD0099AE28 /* LoginViewModel.swift */; };
 		C0598BEE24BFD4640099AE28 /* UITextField+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0598BED24BFD4640099AE28 /* UITextField+Toolbar.swift */; };
-		C07C0B3A24D39B9600579268 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07C0B3924D39B9600579268 /* Login.swift */; };
+		C0601E2224DCC9C200A1FDE6 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0601E2124DCC9C200A1FDE6 /* KeychainHelper.swift */; };
+		C0601E2824DCD93900A1FDE6 /* Pods_zCine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0601E2724DCD93900A1FDE6 /* Pods_zCine.framework */; };
 		C0BFB99824C6763600905CD2 /* AuthenticationEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BFB99724C6763600905CD2 /* AuthenticationEndPoint.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BEFFD868E53E12799AD1ED4 /* Pods-zCineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zCineTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zCineTests/Pods-zCineTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3F8DE327AFBC2205B8822979 /* Pods-zCineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zCineTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-zCineTests/Pods-zCineTests.release.xcconfig"; sourceTree = "<group>"; };
+		40215426CF8B3CDC566E802E /* Pods-zCineTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zCineTests.release.xcconfig"; path = "Target Support Files/Pods-zCineTests/Pods-zCineTests.release.xcconfig"; sourceTree = "<group>"; };
+		532725B07FC3F1409C4C6411 /* Pods_zCine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zCine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57EC1E9CF9063950348F1D41 /* Pods-zCine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zCine.release.xcconfig"; path = "Target Support Files/Pods-zCine/Pods-zCine.release.xcconfig"; sourceTree = "<group>"; };
+		5F4388593628072EF7FD740E /* Pods-zCine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zCine.debug.xcconfig"; path = "Target Support Files/Pods-zCine/Pods-zCine.debug.xcconfig"; sourceTree = "<group>"; };
+		681E2D8B1435D32663130E3E /* Pods_zCineTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zCineTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B90876AEA9EEB5450BA0DFE /* Pods-zCine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zCine.release.xcconfig"; path = "Pods/Target Support Files/Pods-zCine/Pods-zCine.release.xcconfig"; sourceTree = "<group>"; };
+		7C928494AB28F786022267E7 /* Pods-zCine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zCine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-zCine/Pods-zCine.debug.xcconfig"; sourceTree = "<group>"; };
 		C05401B924D0FAE800F06816 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		C054DAA324C5224F009223C4 /* TmdbApiProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbApiProvider.swift; sourceTree = "<group>"; };
 		C055576624C7BD5E003AE9E2 /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
@@ -66,8 +77,11 @@
 		C0567DFA24BE885D00638E85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0598BEB24BFD0DD0099AE28 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		C0598BED24BFD4640099AE28 /* UITextField+Toolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Toolbar.swift"; sourceTree = "<group>"; };
-		C07C0B3924D39B9600579268 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		C0601E2124DCC9C200A1FDE6 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		C0601E2324DCD8C700A1FDE6 /* KeychainSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KeychainSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0601E2724DCD93900A1FDE6 /* Pods_zCine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_zCine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0BFB99724C6763600905CD2 /* AuthenticationEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationEndPoint.swift; sourceTree = "<group>"; };
+		F07C40A47BDB0F011F007569 /* Pods-zCineTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zCineTests.debug.xcconfig"; path = "Target Support Files/Pods-zCineTests/Pods-zCineTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0601E2824DCD93900A1FDE6 /* Pods_zCine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DDA050B364D86DA95543AD0 /* Pods_zCineTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +138,8 @@
 				C0567DB924BE87C000638E85 /* zCine */,
 				C0567DD324BE87C500638E85 /* zCineTests */,
 				C0567DB824BE87C000638E85 /* Products */,
+				FB13369EE7E92E35BCE1D495 /* Pods */,
+				C8B16184ADE8515438547778 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +155,7 @@
 		C0567DB924BE87C000638E85 /* zCine */ = {
 			isa = PBXGroup;
 			children = (
+				C0601E2024DCC99A00A1FDE6 /* Helpers */,
 				C054DAA224C521DC009223C4 /* Services */,
 				C0567DE524BE884200638E85 /* Coordinator */,
 				C0567DDF24BE884200638E85 /* Extensions */,
@@ -185,7 +204,6 @@
 			isa = PBXGroup;
 			children = (
 				C0567DE424BE884200638E85 /* Coordination.swift */,
-				C07C0B3924D39B9600579268 /* Login.swift */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -272,6 +290,40 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		C0601E2024DCC99A00A1FDE6 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C0601E2124DCC9C200A1FDE6 /* KeychainHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C8B16184ADE8515438547778 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0601E2724DCD93900A1FDE6 /* Pods_zCine.framework */,
+				C0601E2324DCD8C700A1FDE6 /* KeychainSwift.framework */,
+				532725B07FC3F1409C4C6411 /* Pods_zCine.framework */,
+				681E2D8B1435D32663130E3E /* Pods_zCineTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB13369EE7E92E35BCE1D495 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F4388593628072EF7FD740E /* Pods-zCine.debug.xcconfig */,
+				57EC1E9CF9063950348F1D41 /* Pods-zCine.release.xcconfig */,
+				F07C40A47BDB0F011F007569 /* Pods-zCineTests.debug.xcconfig */,
+				40215426CF8B3CDC566E802E /* Pods-zCineTests.release.xcconfig */,
+				7C928494AB28F786022267E7 /* Pods-zCine.debug.xcconfig */,
+				6B90876AEA9EEB5450BA0DFE /* Pods-zCine.release.xcconfig */,
+				1BEFFD868E53E12799AD1ED4 /* Pods-zCineTests.debug.xcconfig */,
+				3F8DE327AFBC2205B8822979 /* Pods-zCineTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -279,9 +331,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0567DD924BE87C500638E85 /* Build configuration list for PBXNativeTarget "zCine" */;
 			buildPhases = (
+				B4A874FD2B43C65E317DDDF7 /* [CP] Check Pods Manifest.lock */,
 				C0567DB324BE87C000638E85 /* Sources */,
 				C0567DB424BE87C000638E85 /* Frameworks */,
 				C0567DB524BE87C000638E85 /* Resources */,
+				5176934D4348358CD851E5F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -296,6 +350,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C0567DDC24BE87C500638E85 /* Build configuration list for PBXNativeTarget "zCineTests" */;
 			buildPhases = (
+				C4960A6BEB9801D572003C82 /* [CP] Check Pods Manifest.lock */,
 				C0567DCC24BE87C500638E85 /* Sources */,
 				C0567DCD24BE87C500638E85 /* Frameworks */,
 				C0567DCE24BE87C500638E85 /* Resources */,
@@ -368,6 +423,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5176934D4348358CD851E5F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zCine/Pods-zCine-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-zCine/Pods-zCine-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-zCine/Pods-zCine-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4A874FD2B43C65E317DDDF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zCine-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4960A6BEB9801D572003C82 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-zCineTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C0567DB324BE87C000638E85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -377,6 +488,7 @@
 				C05401BA24D0FAE800F06816 /* Session.swift in Sources */,
 				C0567DBB24BE87C000638E85 /* AppDelegate.swift in Sources */,
 				C0567DF724BE884200638E85 /* LoginCoordinator.swift in Sources */,
+				C0601E2224DCC9C200A1FDE6 /* KeychainHelper.swift in Sources */,
 				C0567DF524BE884200638E85 /* Coordination.swift in Sources */,
 				C054DAA424C5224F009223C4 /* TmdbApiProvider.swift in Sources */,
 				C055CCF824CFAAAF008DA628 /* ResponseApi.swift in Sources */,
@@ -388,7 +500,6 @@
 				C0598BEE24BFD4640099AE28 /* UITextField+Toolbar.swift in Sources */,
 				C0598BEC24BFD0DD0099AE28 /* LoginViewModel.swift in Sources */,
 				C055576724C7BD5E003AE9E2 /* Token.swift in Sources */,
-				C07C0B3A24D39B9600579268 /* Login.swift in Sources */,
 				C05579AA24CA44B20008D5FD /* URL+Parameter.swift in Sources */,
 				C0567DF324BE884200638E85 /* UIViewController+Instantiate.swift in Sources */,
 			);
@@ -540,11 +651,13 @@
 		};
 		C0567DDA24BE87C500638E85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F4388593628072EF7FD740E /* Pods-zCine.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FQCXZ48D36;
 				INFOPLIST_FILE = zCine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -558,11 +671,13 @@
 		};
 		C0567DDB24BE87C500638E85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57EC1E9CF9063950348F1D41 /* Pods-zCine.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FQCXZ48D36;
 				INFOPLIST_FILE = zCine/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -576,6 +691,7 @@
 		};
 		C0567DDD24BE87C500638E85 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F07C40A47BDB0F011F007569 /* Pods-zCineTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -598,6 +714,7 @@
 		};
 		C0567DDE24BE87C500638E85 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40215426CF8B3CDC566E802E /* Pods-zCineTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
