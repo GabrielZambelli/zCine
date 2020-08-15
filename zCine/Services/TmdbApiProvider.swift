@@ -27,10 +27,10 @@ class TmdbApiProvider {
     
     //MARK: -- Properties
     
-    private let basePath: String = "https://www.themoviedb.org"
+    private let basePath: String = "https://api.themoviedb.org/3"
     private let timeOut: Int = 30
     private var session: URLSession?
-    private let apiKey: String = ""
+    private let apiKey: String = "2e14b7780bd8e44aab2fc82bc1f241cc"
     
     //MARK: -- Singleton
        static let shared = TmdbApiProvider()
@@ -101,7 +101,7 @@ class TmdbApiProvider {
     
     private func buidUrlResquest(_ endPoint: String, method: HTTPMethod, parameter:parameters, body: HTTPBody, header: HTTPHeader) -> URLRequest? {
         
-       var url = URL(string: basePath + endPoint)
+        var url = URL(string: self.basePath + endPoint)
         url = url?.appending(parameter: parameter)
         
         if let url = url {

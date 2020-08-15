@@ -8,6 +8,9 @@
 
 import UIKit
 
+protocol Login{
+    func didLogin()
+}
 
 class LoginCoordinator: Coordinatior{
     var navigationController: UINavigationController

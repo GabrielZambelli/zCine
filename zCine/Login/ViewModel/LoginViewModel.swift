@@ -25,9 +25,11 @@ class LoginViewModel {
  
     
     func validLogin(userName: String, password: String){
-        requestToken()
-        validToken(userName, password)
-        createSession()
+        requestToken(){
+            self.validToken(userName, password){
+                 self.createSession()
+            }
+        }
     }
     
     private func createSession(){
@@ -40,20 +42,26 @@ class LoginViewModel {
             case.success(let session):
                 
                 if(KeychainHelper.shared.set(session: session)){
-                    self.delegate?.didLogin()
+                    DispatchQueue.main.async {
+                     self.delegate?.didLogin()
+                    }
                 }else{
-                    self.delegate?.failedLogin(.badSession)
+                    DispatchQueue.main.async {
+                     self.delegate?.failedLogin(.badSession)
+                    }
                 }
                 
                 break
             case .failure(let error):
-                self.delegate?.failedLogin(error)
+                DispatchQueue.main.async {
+                                   self.delegate?.failedLogin(error)
+                               }
                 break
             }
         }
     }
     
-    private func validToken(_ userName: String, _ password: String){
+    private func validToken(_ userName: String, _ password: String, complete: @escaping () -> Void){
         
         guard let token = token else {
             self.delegate?.failedLogin(.badToken)
@@ -64,23 +72,29 @@ class LoginViewModel {
             switch result{
             case .success(let token):
                 self.validToken = token
+                complete()
                 break
             case .failure(let error):
-                self.delegate?.failedLogin(error)
+                 DispatchQueue.main.async {
+                    self.delegate?.failedLogin(error)
+                  }
                 break
                 
             }
         }
     }
     
-    private func requestToken(){
+    private func requestToken(complete:@escaping  () -> Void){
         TmdbApiProvider.shared.requestToken { (result) in
             switch result{
             case .success(let token):
                 self.token = token
+                complete()
                 break
             case .failure(let error):
-                self.delegate?.failedLogin(error)
+                DispatchQueue.main.async {
+                    self.delegate?.failedLogin(error)
+                }
                 break
             }
         }

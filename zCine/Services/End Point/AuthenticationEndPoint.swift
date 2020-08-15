@@ -36,7 +36,9 @@ extension TmdbApiProvider {
                     "password": password,
                     "request_token": token.requestToken]
         
-        request(Token.self, endPoint: .SessionWithLogin, httpMethod: .POST, parameters: parameter, body: body) { (result) in
+        let header = ["Content-Type":"application/json"]
+        
+        request(Token.self, endPoint: .SessionWithLogin, httpMethod: .POST, header:header ,parameters: parameter, body: body) { (result) in
             
             switch result{
             case .success(let validatedToken ):
@@ -52,11 +54,11 @@ extension TmdbApiProvider {
         
         let parameter = ["api_key":self.getApiKey()]
         let body = ["request_token": validatedToken.requestToken]
+        let header = ["Content-Type":"application/json"]
         
-        request(Session.self, endPoint: .CreateSession, httpMethod: .POST,  parameters: parameter, body: body) { (result) in
+        request(Session.self, endPoint: .CreateSession, httpMethod: .POST, header: header,  parameters: parameter, body: body) { (result) in
             switch result{
             case .success(let session):
-                
                 if(session.success){
                     let sessionValid = Session(token: validatedToken, sessionId: session.sessionId, success: session.success)
                     complete(.success(sessionValid))
@@ -71,11 +73,7 @@ extension TmdbApiProvider {
                 break
             }
         }
-        
-        
     }
-    
-     
 }
 
 

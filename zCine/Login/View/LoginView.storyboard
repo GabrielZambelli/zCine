@@ -48,6 +48,9 @@
                                 <state key="normal" title="Entrar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="login:" destination="6yK-jc-778" eventType="touchUpInside" id="SUM-UT-hcv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.94117647059999998" green="0.72549019609999998" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -68,7 +71,6 @@
                         <viewLayoutGuide key="safeArea" id="ibf-6n-4rM"/>
                     </view>
                     <connections>
-                        <outlet property="btLogin" destination="4fa-QB-7SX" id="2yC-vp-5wh"/>
                         <outlet property="tfPassword" destination="kk1-dC-i5d" id="K2a-q2-o8H"/>
                         <outlet property="tfUser" destination="FaU-r7-W8g" id="Wfa-KD-yge"/>
                     </connections>

@@ -8,17 +8,11 @@
 
 import UIKit
 
-
-protocol Login {
-    
-    func didLogin()
-}
-
 class LoginViewController: UIViewController {
     
     //MARK: -- Attributes
     var coordinator: Login?
-    weak var loginViewModel: LoginViewModel?
+    var loginViewModel: LoginViewModel?
     
     //MARK: -- IBOutlet
     
@@ -27,7 +21,12 @@ class LoginViewController: UIViewController {
     
     //MARK: -- IBAction
     
-    @IBOutlet weak var btLogin: UIButton!
+    
+    @IBAction func login(_ sender: Any) {
+        hideKeyboar()
+        guard let user = tfUser.text, let password = tfPassword.text else { return }
+        loginViewModel?.validLogin(userName: user, password: password)
+    }
     
     
     //MARK: -- View Life cycle
@@ -42,14 +41,7 @@ class LoginViewController: UIViewController {
     }
     
     //MARK: Method
-    
-    func login(){
-        
-        guard let user = tfUser.text, let password = tfPassword.text else { return }
-        loginViewModel?.validLogin(userName: user, password: password)
-        
-        hideKeyboar()
-    }
+
     
     @objc func hideKeyboar(){
         self.view.endEditing(true)
@@ -63,11 +55,12 @@ extension LoginViewController: UITextFieldDelegate{
         case tfUser:
             tfPassword.becomeFirstResponder()
         default:
-            login()
+            login(self)
         }
         return true
     }
 }
+
 
 extension LoginViewController: LoginModel{
     
@@ -76,6 +69,8 @@ extension LoginViewController: LoginModel{
     }
     
     func didLogin() {
+        
         coordinator?.didLogin()
+        
     }
 }
