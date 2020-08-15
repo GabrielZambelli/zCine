@@ -8,6 +8,9 @@
 
 import UIKit
 
+protocol Login{
+    func didLogin()
+}
 
 class LoginCoordinator: Coordinatior{
     var navigationController: UINavigationController
@@ -20,12 +23,23 @@ class LoginCoordinator: Coordinatior{
     
     func start() {
         let loginViewController = LoginViewController.instantiateFromStoryboard(.login)
+        loginViewController?.coordinator = self
         
+        let loginViewModel = LoginViewModel()
+        loginViewModel.delegate = loginViewController
+        loginViewController?.loginViewModel = loginViewModel
+
         if let viewController = loginViewController{
             navigationController.pushViewController(viewController, animated: false)
         }
     }
+}
+
+extension LoginCoordinator: Login{
     
-    
+    func didLogin() {
+        parentCoordinator?.childDidFinish(self)
+        parentCoordinator?.start()
+    }
 }
 
