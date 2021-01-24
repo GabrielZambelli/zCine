@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "B556FA12-9E05-4686-9D9B-1E55F2B50F13"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B7E05585-C801-49CF-B53F-446CEB441AE1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zCine/Shared/Views/CircleCollection/Controllers/CircleTableViewCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "18"
+            endingLineNumber = "18"
+            landmarkName = "CircleTableViewCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "B7E05585-C801-49CF-B53F-446CEB441AE1 - 27ffb8efeab059c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zCine.CircleTableViewCell.source.getter : Swift.Optional&lt;zCine.CircleCollectionSource&gt;"
+                  moduleName = "zCine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabriel/Documents/Projetos/zcine/zCine/zCine/Shared/Views/CircleCollection/Controllers/CircleTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "91">
+               </Location>
+               <Location
+                  uuid = "B7E05585-C801-49CF-B53F-446CEB441AE1 - 53241bf2cf86f5e8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zCine.CircleTableViewCell.source.setter : Swift.Optional&lt;zCine.CircleCollectionSource&gt;"
+                  moduleName = "zCine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabriel/Documents/Projetos/zcine/zCine/zCine/Shared/Views/CircleCollection/Controllers/CircleTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "B7E05585-C801-49CF-B53F-446CEB441AE1 - f1fcec694ca8f328"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zCine.CircleTableViewCell.source.modify : Swift.Optional&lt;zCine.CircleCollectionSource&gt;"
+                  moduleName = "zCine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabriel/Documents/Projetos/zcine/zCine/zCine/Shared/Views/CircleCollection/Controllers/CircleTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "B7E05585-C801-49CF-B53F-446CEB441AE1 - b9d4bd61e4f2fa12"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zCine.CircleTableViewCell.source.modify : Swift.Optional&lt;zCine.CircleCollectionSource&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "zCine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabriel/Documents/Projetos/zcine/zCine/zCine/Shared/Views/CircleCollection/Controllers/CircleTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "B7E05585-C801-49CF-B53F-446CEB441AE1 - 288c76f923db9f59"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zCine.CircleTableViewCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; zCine.CircleTableViewCell"
+                  moduleName = "zCine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabriel/Documents/Projetos/zcine/zCine/zCine/Shared/Views/CircleCollection/Controllers/CircleTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "274">
+               </Location>
+               <Location
+                  uuid = "B7E05585-C801-49CF-B53F-446CEB441AE1 - 7f02f1c8809a8e7d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zCine.CircleTableViewCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;zCine.CircleTableViewCell&gt;"
+                  moduleName = "zCine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabriel/Documents/Projetos/zcine/zCine/zCine/Shared/Views/CircleCollection/Controllers/CircleTableViewCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "215">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6310EE42-A3E5-4FDC-BC1B-5285835CA05D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zCine/Screen/Login/Controller/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "init(coder:coordinator:viewModel:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FB0AA789-40E6-4CC2-AA2A-36861211D612"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zCine/Screen/Login/Coordinator/LoginCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "start()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "05FF9715-9614-401B-84D5-77E95E354DB6"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zCine/Screen/Login/Coordinator/LoginCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "start()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "05FF9715-9614-401B-84D5-77E95E354DB6 - d0a79baacad7ec23"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zCine.LoginCoordinator.start() -&gt; ()"
+                  moduleName = "zCine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabriel/Documents/Projetos/zcine/zCine/zCine/Screen/Login/Coordinator/LoginCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "284">
+               </Location>
+               <Location
+                  uuid = "05FF9715-9614-401B-84D5-77E95E354DB6 - ca0fef63cb844baf"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.NSCoder) -&gt; Swift.Optional&lt;zCine.LoginViewController&gt; in zCine.LoginCoordinator.start() -&gt; ()"
+                  moduleName = "zCine"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gabriel/Documents/Projetos/zcine/zCine/zCine/Screen/Login/Coordinator/LoginCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "57">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "650DEAC0-14F7-4471-9C07-18F726430BF7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zCine/Screen/Login/Coordinator/LoginCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "start()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

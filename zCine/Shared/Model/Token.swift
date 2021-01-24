@@ -18,7 +18,6 @@ struct Token: Decodable, Encodable{
     //MARK: -- Method
     func isExpired() -> Bool{
         //to do Token esta valido ??
-        
         return true
     }
 }

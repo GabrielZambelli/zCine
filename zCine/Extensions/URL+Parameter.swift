@@ -18,8 +18,10 @@ extension URL {
        
         var queryItens = urlComponents.queryItems ?? []
         
-        queryItens.append(contentsOf: parameter.map({ URLQueryItem(name: $0, value: String.init(describing: $1))
-        }))
+        if(parameter.count > 0){
+            queryItens.append(contentsOf: parameter.map({ URLQueryItem(name: $0, value: String.init(describing: $1))
+            }))
+        }
         urlComponents.queryItems = queryItens
         //self = urlComponents.url ?? self
         

@@ -21,6 +21,8 @@ enum TmdbApiEndPoint: String {
     case SessionWithLogin = "/authentication/token/validate_with_login"
     case GuestSession = "/authentication/guest_session/new"
     case CreateSession = "/authentication/session/new"
+    case GenresMovies = "/genre/movie/list"
+    case GenresSeries = "/genre/tv/list"
 }
 
 class TmdbApiProvider {
@@ -32,12 +34,13 @@ class TmdbApiProvider {
     private var session: URLSession?
     private let apiKey: String = "2e14b7780bd8e44aab2fc82bc1f241cc"
     
-    //MARK: -- Singleton
-       static let shared = TmdbApiProvider()
+//    //MARK: -- Singleton
+//       static let shared = TmdbApiProvider()
+//
     
     //MARK: Inicializer
     
-    private init (){
+     init (){
         let configuration =  URLSessionConfiguration.default
         configuration.timeoutIntervalForRequest = TimeInterval(timeOut)
         configuration.timeoutIntervalForResource = TimeInterval(timeOut)

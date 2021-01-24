@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="296" id="iKl-Z6-EHQ" customClass="CircleTableViewCell" customModule="zCine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="663" height="296"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iKl-Z6-EHQ" id="a6e-WF-3WT" customClass="CircleTableViewCell" customModule="zCine" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="663" height="296"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="xB4-Mc-lp5">
+                        <rect key="frame" x="0.0" y="0.0" width="663" height="296"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N09-K2-zDs">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="xB4-Mc-lp5" secondAttribute="bottom" id="BhV-DX-efw"/>
+                    <constraint firstAttribute="trailing" secondItem="xB4-Mc-lp5" secondAttribute="trailing" id="RYp-u6-XwS"/>
+                    <constraint firstItem="xB4-Mc-lp5" firstAttribute="leading" secondItem="a6e-WF-3WT" secondAttribute="leading" id="hYM-QL-5gh"/>
+                    <constraint firstItem="xB4-Mc-lp5" firstAttribute="top" secondItem="a6e-WF-3WT" secondAttribute="top" id="uCe-v2-1Os"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="collectionView" destination="xB4-Mc-lp5" id="XDb-k9-PoY"/>
+            </connections>
+            <point key="canvasLocation" x="-388" y="33"/>
+        </tableViewCell>
+    </objects>
+</document>

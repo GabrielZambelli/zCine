@@ -11,7 +11,7 @@ import Foundation
 
 class Session: Decodable, Encodable{
     
-    let token: Token?
+    var token: Token?
     let sessionId: String
     let success: Bool
     

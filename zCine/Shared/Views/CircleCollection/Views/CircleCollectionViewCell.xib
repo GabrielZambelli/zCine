@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="circleCollectionCell" id="beS-Za-5Ql" customClass="CircleCollectionViewCell" customModule="zCine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="249" height="108"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Iz8-vc-EsF" customClass="CircleCollectionViewCell" customModule="zCine" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="249" height="108"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Icz-pt-D8P">
+                        <rect key="frame" x="114.5" y="44" width="20" height="20"/>
+                    </activityIndicatorView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Romance" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etH-9I-B0O">
+                        <rect key="frame" x="50" y="40" width="149" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="Icz-pt-D8P" firstAttribute="centerY" secondItem="Iz8-vc-EsF" secondAttribute="centerY" id="4Ft-ST-naW"/>
+                    <constraint firstItem="etH-9I-B0O" firstAttribute="centerY" secondItem="Iz8-vc-EsF" secondAttribute="centerY" id="EWm-WI-5Dg"/>
+                    <constraint firstItem="Icz-pt-D8P" firstAttribute="centerX" secondItem="Iz8-vc-EsF" secondAttribute="centerX" id="HYD-CE-gfd"/>
+                    <constraint firstItem="etH-9I-B0O" firstAttribute="top" secondItem="Iz8-vc-EsF" secondAttribute="top" constant="40" id="IWh-MH-Jr8"/>
+                    <constraint firstItem="etH-9I-B0O" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Iz8-vc-EsF" secondAttribute="leading" constant="50" id="eTT-sF-mwn"/>
+                    <constraint firstAttribute="bottom" secondItem="etH-9I-B0O" secondAttribute="bottom" constant="40" id="gQY-in-1ND"/>
+                    <constraint firstItem="etH-9I-B0O" firstAttribute="centerX" secondItem="Iz8-vc-EsF" secondAttribute="centerX" id="oNW-h5-fvg"/>
+                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="etH-9I-B0O" secondAttribute="trailing" constant="50" id="yGk-I1-TTV"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="249" height="108"/>
+            <connections>
+                <outlet property="activityIndicator" destination="Icz-pt-D8P" id="7HL-fa-6Vc"/>
+                <outlet property="title" destination="etH-9I-B0O" id="vK8-2i-Bq1"/>
+                <outlet property="viewCell" destination="Iz8-vc-EsF" id="IVE-7R-Js9"/>
+            </connections>
+            <point key="canvasLocation" x="-116.66666666666667" y="139.95535714285714"/>
+        </collectionViewCell>
+    </objects>
+</document>
